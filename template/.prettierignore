@@ -1,0 +1,10 @@
+**/node_modules/**
+**/coverage/**
+**/__snapshots__/**
+**/dist/**
+**/build/**
+**/*.min.js
+tmp/
+build/
+.yarn/
+*.yaml

@@ -1,0 +1,25 @@
+{
+  "name": "sao-workspace",
+  "version": "0.0.0",
+  "description": "generator for npm workspace with linting, formating, lerna...",
+  "repository": {
+    "url": "amirilovic/sao-workspace",
+    "type": "git"
+  },
+  "author": "amirilovic <amirilovic@gmail.com> (github.com/amirilovic)",
+  "license": "MIT",
+  "files": [
+    "saofile.js",
+    "template"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "superb": "^1.3.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "sao": "^1.0.0"
+  }
+}
