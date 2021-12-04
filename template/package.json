@@ -8,9 +8,9 @@
   "description": "<%= description %>",
   "scripts": {
     "lint": "eslint .",
-    "lint:affected": "eslint $(git diff --name-only master -- packages/*/src | grep  -E \"(.js$|.jsx$|.ts$|.tsx$)\")",
+    "lint:affected": "eslint $(git --no-pager diff ${BASE_COMMIT:-origin/<%= main %>}...HEAD --name-only --diff-filter=d '*.js' '*.jsx' '*.ts' '*.tsx')",
     "test": "lerna run test",
-    "test:affected": "lerna run test --since master",
+    "test:affected": "lerna run test --since <%= main %>",
     "build": "lerna run build --include-dependencies",
     "start": "lerna run start --parallel"
   },
