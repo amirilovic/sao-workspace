@@ -7,9 +7,8 @@
   ],
   "description": "<%= description %>",
   "scripts": {
-    "lint": "turbo run lint --parallel",
-    "lint:fix": "turbo run lint --parallel -- --fix",
-    "lint:affected": "turbo run lint --parallel --filter=...[origin/<%= main %>]",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "test": "turbo run test --parallel",
     "test:affected": "turbo run test --parallel --filter=...[origin/<%= main %>]",
     "build": "turbo run build --stream",
